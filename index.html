@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login page
+        </title>
+        <script type="text/javascript">
+            function login(){
+                if(document.getElementById(1).value == "1" && document.getElementById(2).value == "1"){
+                alert("Login")
+            }
+            else{
+                alert("faild")
+            } 
+            }
+        </script>
+        <style type="text/css">
+            body{
+                background:url(copy.jpg) no-repeat;
+                background-size: cover;
+            }
+            .main{
+                width: 350px;
+                top: 35%;
+                left: 40%;
+                transform: (-50%,-50%);
+                position: absolute;
+                color: aqua;
+            }
+            .main h1{
+                font-size: 40px;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 40px 0;
+            }
+            .main p{
+                font-size: 20px;
+                margin: 15px 0;
+            }
+            .main input{
+                font-size: 18px;
+                width: 100%;
+                padding: 15px 10px;
+                border: 0px;
+                outline: none;
+                border-radius: 5px;
+            }
+            .main button{
+                font-size: 18px;
+                font-weight: bold;
+                margin: 20px 0;
+                padding: 10px 15px;
+                width: 50%;
+                border-radius: 5px;
+                border: 0px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <h1>Login form</h1>
+            <p>Username</p>
+            <input type="text" placeholder="Enter the username" id="1"/>
+            <p>Password</p>
+            <input type="password" placeholder="Enter the password" id="2"/> 
+            <button type="submit" value="Login" onclick="login()">Submit</button> 
+        </div>       
+    </body>
+</html>
